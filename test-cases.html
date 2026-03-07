@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Test Cases Documentation — Nurcahyadi QA Portfolio. Detailed test cases for Playwright, Selenium, API, Mobile, and Performance testing projects.">
+    <title>Test Cases — Nurcahyadi QA Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test-cases.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>NC<span class="logo-slash">/</span><span
+                    class="logo-bracket">&gt;</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#portfolio" class="nav-link">Portfolio</a>
+                <a href="#" class="nav-link active">Test Cases</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                <span class="section-tag">&lt;test-cases&gt;</span>
+                Test Cases Documentation
+            </h1>
+            <p class="page-subtitle">Comprehensive test cases across all portfolio projects — <strong>96+ test
+                    scenarios</strong> covering Web, API, Mobile, and Performance testing.</p>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Projects</button>
+                <button class="filter-tab" data-filter="playwright">🎭 Playwright</button>
+                <button class="filter-tab" data-filter="selenium">☕ Selenium Java</button>
+                <button class="filter-tab" data-filter="api">🔌 API Testing</button>
+                <button class="filter-tab" data-filter="mobile">📱 Mobile</button>
+                <button class="filter-tab" data-filter="performance">⚡ Performance</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Cases Content -->
+    <main class="test-cases-main">
+        <div class="container">
+
+            <!-- Project 1: Playwright -->
+            <div class="tc-project" data-project="playwright">
+                <div class="tc-project-header">
+                    <div class="tc-project-icon">🎭</div>
+                    <div>
+                        <h2 class="tc-project-title">Playwright E-Commerce Automation</h2>
+                        <p class="tc-project-meta">Playwright + JavaScript • <strong>34 Test Cases</strong> • 5 Test
+                            Suites</p>
+                    </div>
+                </div>
+
+                <!-- Login Tests -->
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">6 TCs</span>
+                        Login Tests
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-L01</td>
+                                    <td>Login with valid credentials (standard_user)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-L02</td>
+                                    <td>Login with invalid username</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-L03</td>
+                                    <td>Login with invalid password</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-L04</td>
+                                    <td>Login with locked out user</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-L05</td>
+                                    <td>Login with empty username</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-L06</td>
+                                    <td>Login with empty password</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Product Catalog Tests -->
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">8 TCs</span>
+                        Product Catalog Tests
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-P01</td>
+                                    <td>Verify products page is displayed after login</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-P02</td>
+                                    <td>Verify 6 products are displayed</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-P03</td>
+                                    <td>Verify all product names are not empty</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-P04</td>
+                                    <td>Verify all products have prices</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-P05</td>
+                                    <td>Sort products by Name (A to Z)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-P06</td>
+                                    <td>Sort products by Name (Z to A)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-P07</td>
+                                    <td>Sort products by Price (Low to High)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-P08</td>
+                                    <td>Sort products by Price (High to Low)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Cart Tests -->
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">7 TCs</span>
+                        Cart Tests
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-C01</td>
+                                    <td>Add single product to cart</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-C02</td>
+                                    <td>Add multiple products to cart</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-C03</td>
+                                    <td>Remove product from cart</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-C04</td>
+                                    <td>Verify cart badge count updates</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-C05</td>
+                                    <td>Verify cart item names and details</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-C06</td>
+                                    <td>Continue shopping from cart page</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-low">Low</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-C07</td>
+                                    <td>Verify empty cart state</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Checkout Tests -->
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">8 TCs</span>
+                        Checkout Tests
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-CH01</td>
+                                    <td>Complete checkout with valid information</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-CH02</td>
+                                    <td>Checkout with empty first name</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-CH03</td>
+                                    <td>Checkout with empty last name</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-CH04</td>
+                                    <td>Checkout with empty postal code</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-CH05</td>
+                                    <td>Verify checkout overview page displays totals</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-CH06</td>
+                                    <td>Cancel checkout returns to cart</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-CH07</td>
+                                    <td>Verify order complete message</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-CH08</td>
+                                    <td>Back to products after order complete</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-low">Low</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Search Filter Tests -->
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">5 TCs</span>
+                        Search &amp; Filter Tests
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-SF01</td>
+                                    <td>Sort and verify product order persists</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SF02</td>
+                                    <td>Add item after sorting — cart persists</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SF03</td>
+                                    <td>Multiple sort changes keep correct order</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SF04</td>
+                                    <td>Sort by price and verify ascending order</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SF05</td>
+                                    <td>Cart items persist after sorting change</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Selenium Java -->
+            <div class="tc-project" data-project="selenium">
+                <div class="tc-project-header">
+                    <div class="tc-project-icon">☕</div>
+                    <div>
+                        <h2 class="tc-project-title">Selenium Java Web Automation</h2>
+                        <p class="tc-project-meta">Selenium 4.41.0 + TestNG 7.9.0 + Java • <strong>~29
+                                Scenarios</strong> • 4 Test Classes</p>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">8 scenarios</span>
+                        LoginTest (DataProvider)
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-SL01</td>
+                                    <td>Valid login — standard_user (DataProvider)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SL02</td>
+                                    <td>Valid login — performance_glitch_user (DataProvider)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SL03</td>
+                                    <td>Invalid username + wrong password (DataProvider)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SL04</td>
+                                    <td>Locked out user (DataProvider)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SL05</td>
+                                    <td>Empty username field (DataProvider)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SL06</td>
+                                    <td>Empty password field (DataProvider)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SL07</td>
+                                    <td>Verify login page elements are displayed</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SL08</td>
+                                    <td>Verify login page title is "Swag Labs"</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-low">Low</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">7 TCs</span>
+                        ProductTest
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-SP01</td>
+                                    <td>Verify products page title is "Products"</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SP02</td>
+                                    <td>Verify 6 products displayed on page</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SP03</td>
+                                    <td>Verify all product names are not empty</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SP04</td>
+                                    <td>Sort by name A-Z and verify order</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SP05</td>
+                                    <td>Sort by name Z-A and verify order</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SP06</td>
+                                    <td>Sort by price Low-High and verify order</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SP07</td>
+                                    <td>Sort by price High-Low and verify order</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">5 TCs</span>
+                        CartTest
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-SC01</td>
+                                    <td>Add single item to cart — badge = 1</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SC02</td>
+                                    <td>Add 3 items to cart — badge = 3</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SC03</td>
+                                    <td>Verify item appears in cart page</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SC04</td>
+                                    <td>Remove item from cart — count decreases</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SC05</td>
+                                    <td>Continue shopping returns to inventory</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">9 scenarios</span>
+                        CheckoutTest (DataProvider)
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-SCH01</td>
+                                    <td>Complete E2E checkout flow</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SCH02</td>
+                                    <td>Empty first name validation (DataProvider)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SCH03</td>
+                                    <td>Empty last name validation (DataProvider)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SCH04</td>
+                                    <td>Empty postal code validation (DataProvider)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SCH05</td>
+                                    <td>All fields empty validation (DataProvider)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SCH06</td>
+                                    <td>Verify overview page elements</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SCH07</td>
+                                    <td>Cancel checkout returns to cart</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-SCH08</td>
+                                    <td>Back to home after order complete</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-low">Low</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: API Testing -->
+            <div class="tc-project" data-project="api">
+                <div class="tc-project-header">
+                    <div class="tc-project-icon">🔌</div>
+                    <div>
+                        <h2 class="tc-project-title">API Testing Automation</h2>
+                        <p class="tc-project-meta">Postman + Newman • <strong>13 Test Cases</strong> • CRUD +
+                            Authentication</p>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">6 TCs</span>
+                        User Management API
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-A01</td>
+                                    <td>GET /users — List users (page 1)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A02</td>
+                                    <td>GET /users/2 — Get single user</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A03</td>
+                                    <td>GET /users/23 — User not found (404)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A04</td>
+                                    <td>POST /users — Create user</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A05</td>
+                                    <td>PUT /users/2 — Update user</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A06</td>
+                                    <td>DELETE /users/2 — Delete user</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">4 TCs</span>
+                        Authentication API
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-A07</td>
+                                    <td>POST /register — Successful registration</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A08</td>
+                                    <td>POST /register — Missing password (400)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A09</td>
+                                    <td>POST /login — Successful login with token</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A10</td>
+                                    <td>POST /login — Missing password (400)</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">3 TCs</span>
+                        Resource &amp; Validation
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-A11</td>
+                                    <td>GET /unknown — List resources</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A12</td>
+                                    <td>GET /users?delay=3 — Delayed response (&lt;5s)</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-A13</td>
+                                    <td>Schema validation on user list response</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Mobile Testing -->
+            <div class="tc-project" data-project="mobile">
+                <div class="tc-project-header">
+                    <div class="tc-project-icon">📱</div>
+                    <div>
+                        <h2 class="tc-project-title">Appium Mobile Automation</h2>
+                        <p class="tc-project-meta">Appium + WebdriverIO • <strong>20 Test Cases</strong> • 3 Feature
+                            Areas</p>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">5 TCs</span>
+                        Login Tests
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-M01</td>
+                                    <td>Login with valid credentials</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M02</td>
+                                    <td>Login with invalid credentials</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M03</td>
+                                    <td>Login with empty fields</td>
+                                    <td><span class="type-negative">Negative</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M04</td>
+                                    <td>Verify login screen elements visible</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M05</td>
+                                    <td>Login and verify home screen title</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">8 TCs</span>
+                        Navigation Tests
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-M06</td>
+                                    <td>Navigate to Accessibility screen</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M07</td>
+                                    <td>Navigate to Animation screen</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M08</td>
+                                    <td>Navigate to App screen</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M09</td>
+                                    <td>Navigate to Content screen</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M10</td>
+                                    <td>Navigate to Graphics screen</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M11</td>
+                                    <td>Navigate to Media screen</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M12</td>
+                                    <td>Back button returns to home</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M13</td>
+                                    <td>Sequential navigation through multiple screens</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">7 TCs</span>
+                        Form Input Tests
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Case</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-M14</td>
+                                    <td>Enter text in text field</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M15</td>
+                                    <td>Clear text field content</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M16</td>
+                                    <td>Toggle checkbox on/off</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M17</td>
+                                    <td>Select item from spinner dropdown</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M18</td>
+                                    <td>Toggle switch on/off</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M19</td>
+                                    <td>Select radio button option</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-M20</td>
+                                    <td>Submit form with all fields filled</td>
+                                    <td><span class="type-positive">Positive</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Performance Testing -->
+            <div class="tc-project" data-project="performance">
+                <div class="tc-project-header">
+                    <div class="tc-project-icon">⚡</div>
+                    <div>
+                        <h2 class="tc-project-title">k6 Performance Testing</h2>
+                        <p class="tc-project-meta">k6 • <strong>4 Test Types</strong> • Custom Metrics &amp; Thresholds
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tc-suite">
+                    <h3 class="tc-suite-title">
+                        <span class="suite-badge">4 Types</span>
+                        Performance Test Scenarios
+                    </h3>
+                    <div class="tc-table-wrap">
+                        <table class="tc-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-id">ID</th>
+                                    <th>Test Scenario</th>
+                                    <th class="th-type">Type</th>
+                                    <th class="th-priority">Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>TC-K01</td>
+                                    <td><strong>Load Test</strong> — 50 VUs, 8 min, p95&lt;2s, error&lt;5%<br><span
+                                            class="tc-detail">GET users list, GET single user, POST create user</span>
+                                    </td>
+                                    <td><span class="type-load">Load</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-K02</td>
+                                    <td><strong>Stress Test</strong> — Ramp to 400 VUs, find breaking point<br><span
+                                            class="tc-detail">Mixed CRUD + auth operations, p99&lt;5s,
+                                            error&lt;15%</span></td>
+                                    <td><span class="type-stress">Stress</span></td>
+                                    <td><span class="priority-high">High</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-K03</td>
+                                    <td><strong>Spike Test</strong> — Sudden spike to 500 VUs<br><span
+                                            class="tc-detail">Simulates flash sale / viral traffic surge,
+                                            p95&lt;5s</span></td>
+                                    <td><span class="type-spike">Spike</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                                <tr>
+                                    <td>TC-K04</td>
+                                    <td><strong>Soak Test</strong> — 30 VUs sustained for 15+ min<br><span
+                                            class="tc-detail">80% read / 20% write mix, detects memory leaks,
+                                            p99&lt;3s</span></td>
+                                    <td><span class="type-soak">Soak</span></td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Summary Stats -->
+    <section class="tc-summary">
+        <div class="container">
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <span class="summary-number">34</span>
+                    <span class="summary-label">Playwright TCs</span>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-number">~29</span>
+                    <span class="summary-label">Selenium TCs</span>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-number">13</span>
+                    <span class="summary-label">API TCs</span>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-number">20</span>
+                    <span class="summary-label">Mobile TCs</span>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-number">4</span>
+                    <span class="summary-label">Perf Types</span>
+                </div>
+                <div class="summary-card summary-total">
+                    <span class="summary-number">100+</span>
+                    <span class="summary-label">Total Scenarios</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Nurcahyadi. Built with passion for quality. ☕</p>
+        </div>
+    </footer>
+
+    <script src="js/test-cases.js"></script>
+</body>
+
+</html>
